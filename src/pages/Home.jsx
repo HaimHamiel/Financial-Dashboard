@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <section className="heading">
-        <h1>Welcome to my Basic App</h1>
+        <h1>Welcome to Dashboard</h1>
         <p>Where do you want to go?</p>
       </section>
       <Link to="/register" className="btn btn-block">

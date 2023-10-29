@@ -2,5 +2,8 @@ export const appPaths = {
   home: "/",
   login: "/login",
   register: "/register",
-  dashboard: "/Dashboard",
+  equityValuation: "/equityValuation",
+  disposableIncome: "/disposableIncome",
+  variableExpenses: "/variableExpenses",
+  dashboard: "/dashboard",
 };

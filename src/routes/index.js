@@ -1,7 +1,16 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
-import { Home, Login, Register, Dashboard, PrivateRoute } from "./elements";
+import {
+  Home,
+  Login,
+  Register,
+  Dashboard,
+  PrivateRoute,
+  EquityValuation,
+  DisposableIncome,
+  VariableExpenses,
+} from "./elements";
 import { appPaths } from "./paths";
 
 export default function Router() {
@@ -22,16 +31,28 @@ export default function Router() {
           path: appPaths.register,
           element: <Register />,
         },
+
         {
-         element: <PrivateRoute />,
-         children: [
+          element: <PrivateRoute />,
+          children: [
             {
-                path: appPaths.dashboard,
-                element: <Dashboard />,
-            }
-         ]
+              path: appPaths.dashboard,
+              element: <Dashboard />,
+            },
+            {
+              path: appPaths.equityValuation,
+              element: <EquityValuation />,
+            },
+            {
+              path: appPaths.disposableIncome,
+              element: <DisposableIncome />,
+            },
+            {
+              path: appPaths.variableExpenses,
+              element: <VariableExpenses />
+            },
+          ],
         },
-        
       ],
     },
   ];
